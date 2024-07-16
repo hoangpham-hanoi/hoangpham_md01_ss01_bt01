@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Đặt tên file: đuôi có .html
+        HTML là gì?
+            - HTML: hyper text markup language (ngôn ngữ đán dấu siêu văn bản)
+                + đán dấu: phải dùng thẻ đúng tên thẻ, đúng mục đích
+                + siêu văn bản: có thể liên kết các trang, âm thanh, hình ảnh, video,...
+        HTML:
+            có 2 thẻ chính: inline, block
+                Inline: nằm trên cùng 1 dòng
+                    Thẻ a: thẻ tạo liên kết
+                        + Cú pháp: <a> nội dung <a/>
+                        + bên trong thẻ a có các thuộc tính (property): href: địa chỉ trang liên kết
+                    img: ảnh
+                        + thuộc tính: 
+                            src (đường dẫn ảnh)
+                            alt (chú thíc nếu đường dẫn bị sai hoặc không tồn tại đường dẫn ảnh)
+                        + hiển thị ảnh online
+                        + hiển thị ảnh offline
+                    button: nút bấm
+                    thẻ label, imput, ... bài 3 (form)
+                Block: mỗi thằng 1 dòng
+                    div: division (khu vực): chứa các thẻ khác
+                    p: paragraph (đoạn văn)
+                    ul>li
+                    ol>li
+                    header: phần đầu
+                    nav (navigation): thanh điều hướng
+                    section: thẻ khu vực
+                    article: nội dung độc lập
+                    aside: hiển thị nội dung quảng cáo chú thíc cho article
+                    footer: chân trang
+                    h1 - h6: thường 1 trang web nên chứa 1 h1
+                    (chuẩn SEO (search enginee optimization): tối ưu hóa chức năng tìm kiếm)
+    -->
+    <p> html basic1</p>
+    <div> html basic2</div>
+    <span> hello 01</span>
+    <label for=" hello 02"></label>
+    <a href="Lythuyet.html"> chuyển trang 1</a>
+    <a href="Lythuyet.html"> chuyển trang 2</a>
+    <br>
+    <a href=""> Trang chủ</a>
+    <a href="news.html" target = "_blank"> Tin tức</a>
+    <!-- 
+    target = "_blank": chuyển sang tab mới, không ghi đè lên trang hiện hành
+     -->
+    <a href="">Liên hệ</a>
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALIAvQMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAIFBgABB//EAEcQAAIABAMEBgcGAwYEBwAAAAECAAMREgQhMRMiMkEFQlFSYZEUI2JxgaGxM3KCksHwJEPRBnOisuHxNFPi8hUWJXSDk8L/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMEAAX/xAAmEQADAAIBBAICAwEBAAAAAAAAAQIDESESEzFBBBQiUTJhcUIV/9oADAMBAAIRAxEAPwCjkizq/e3onMVb+G2LaVgZD7ryvxKp8iIk3Q013ZcP9kvWbLzif2J2aF8W9cMo6b/DBVtbjWLKf0bjLFvtblu5n6QOdg5+He3ESrfa1yhvsQ/YPrXPIkZPcaJylvTfhw4OfKRWtVlbNbc/lrEQdr1YZZE/YqxOXoUaW1+4t0AmSW7sXWGwUp332Ze7bpDowmDd7duzWrXe7IjfyXPCK4/iQ1sy0uXZxrFkMA01FZF3beLlD7YSQnWVu7/vAx6rdub7vKF7ztcFVgmPIr6LuW27ywDEYZkt3Y0GF2Tfa7v6++J4nC+kJuWwjy1PkdYprwZbZWJvwIyr4vJvR/Vm8UTldHSn4PzQz+QtbOWAz64WOEmNN/4b7EeHorcif2kV+uZtsOzxy4Zo0Y6P3OGE5sjqw6zpi9nRSzZcAKxczsG0Jvh2SKxmRHJgYrWPaJE2lR6ktY0KkZLws8Zls4bYjTKC0iDHOH6iHRpmpmSJ79ZWt7usFQYl0tebM2X6eUWcrDq//af3WCnBN3uH3iPHq0nyewp37KWWJqcDK0MLjFd7cRK+8uo7MuYi1XDt/wByxD0CVNe55EtuW7UGvuid1L8opKa8Mpp8rBzd6VdJb2c/1j0NKe1X2M5lyumZExYYno7ZcC/4RX/Xyheb0ff1pd3daqn+kcsk68hcvfgXmj/lSLfxDSBysFc7M7S+dq+/3wxN6NmpwKy2+1X45R4MNPld5ufZF5zTrRCsVb2ATDSkf1v5penlDZwshk4laIqbOrdBQyv1Wuujmk/YVTXoXMheoscFs61rQ1st/c4u7dAZiT77d6KS9eSdLfggJm5a/wCH/eA3WcH4ucFnM0q29YXZ/Z/LB6Jfg7uXPAxKaa/3YdkethCXwbnW7v6waUrd61vuxC8UstOSh15XfhGfh9+GFRrOK5oA5mpEEkuC6pvkCJXV3WhbE4LuLBS7JDMnEXp62C+qXtDKlXDKV8FAmwUaMiU/VgWxV4ec9IDxSzMTcMyQEyWaNROwavCRkL3Y1Rn35MeTAky0R2hpJrd782cLKkGSNFY5Z5EZ7Q/JxTddbtOzlDMvFf8ATy8yIr0g6RnrBP6Nc/Jr9jq4v2Vb5RKzC4jq2t5QsqwVJcRrBH+Fpz3/AKTTBzZX2U1resqtWIus/rqre1bpBkLJ1mg6Tm663Rmr49eUaJzr2VQlyG3XlKt3E3Z8Kx62HXqWtu908uyLQyJE3qqrR3oy938sQbqSyuWUM7CSupd+URAhk4PzW08zF7Mwt/d/LnCuJwrWcLQZ+Q0+Q9MsrDIXEccpWbvK1D/SBHo2RfuLOXyMOrh77leGcNhe/db1VXKNHcWtpk2tcFaMBK3b2b8tP1hlMLKTgZvxLWH/AES7rf4jA2wrX7kDq6vYN6Ezhd+7/LziLS13r5Tfmiz2LddVb2o5sHfvJAchWXRQzsKr8EJvh2XgjRPhIg2CaBukOrlmeQTU44moaLh8H7MRXBL14KaYXeiuVL04lgZWL2ZgpVkA9CWkU2kTVqnyKKkFRfZjleV3lgizF70be6eT9do9VIMsuIKYmoaF7o3YYRVhhBC6loMgaEdodYmhhImICobvQVRE6tFZlkqQWW0Q3Y7aJEXclVLGQVePGFsL7ZU70SGJ9mIV0lEmE2cp+KWv5Y4yu5A9s3ciQdniTqV6G0yYl9+OZI9Etm60TTDx3c36F4QMyljllKveh6XJj04eH3fon1yJMFiDW92HTIgbyInV5AqpK6Yq92BFV7sWJw0eeixPqylVUFcfuwJlavDFt6HHehQreVh64Rh6L11b80El7nVihHSN3/M/fxgi9Iey0e24YqcmmlzYOsyMyvSapxsy/iia9NyE636xFzQfxNQrwRWaM3J6cwzdb9PrD0vpWV3oRzSCukuQGiay2inPTeGT+fL/ADV+kJYr+1PVwn/2N+g/r5RNzbDqTUrIaPJk3DYf7WYt3dXM+QjETencTN48S33bqDyECXpH8UI4oKSZuJeOkX8LW97n5RZypUqalytcvej53L6Qbu/4os8H0s0rrNL+62USapBcb8M2voiRNcKsZqX/AGgs6zN8/rDcv+0LN/IX80Dc+yVRkL9JCwxLlrFDL6c78u38UMy+mZD9Zvyw85oklWLIXqIsEtipk9Jy/ahlOkJDdb80bsPzMD4ZlrFkXoaZFgZRYXmdIS19qEZ3S3dVfrCZvl4PQ8YcjLQosRosZ2d0zP6jW/hEKDpzFyv5l33lrGZfKxv0X+tk0a2PIzuG/tNL4cVL2ftS8x8RqPnFhL6XwE0VGMle4tQ/OKrLDJvHS8nwkYxo99Kmv1oq9tHGe0e04RnWVlntOs7fiaPDiVSKy6/jaJiEcodUyx9MWOOMbqLCIiV6pxwjQ6pjgxE1+tBA0VxxS9SJpifZiL0VlstJbwwkyKqXO9mDCc0QrRaWXEubDCTV7yxRq/faGJTxnsomXkvFKntQwmMbqbsU0toZlvGalsoqLhJ7N1robkz4pUnQaXiIjUj72aFMXYkEXGbkUQnr3o44qI9s4u3xbQs+KbvRW+kN3m/NHbdu9+bP5QVOgcDUzFNC74rvrApk5uoqs3xECCTX45Vv4v01MOuleTthzMV+CANrBEwtj3b30/WOm4aVdV8QUHIBwv1g96V/ZzPmWziVkaGZOwPXXeVh5DUV8SPkY8nYforEYZZzymlqzbtrHXs+ce3/AOkvcs8dYV6Znw8pONliZnSrOK6LT/y7KZLsJNu9nLM8vqPnCT9D4xP5Ez8usPPzMV+GHtv9Ce2mu8ePc/HDDYWbKe11a77vOsDeRN7v5v0hu5L9nJNAxB5KR4srrQXZs9y2t/p2xOqTKJsmHXhSDy4jJwzbv3a+EMiUybzqyr3vhXWIVUjps8Qd+GJZgWxZfw08zy+cHw0lnff4fqeX+0RqkUWw0uZDMu6J4bBNu3/v9+EOHCWbr3du7GW8korMsVV/3rE1Zn6sMy8M3Dh5DNu/zG+ghhMJin41ly/Z5eUSeaSqE13OP+pie1s/Zixl9H99pP3VVR+kccIt/FLl29ZVBJ95yoIl9iQsTuv3d1W0tuz8tYOspm/6qqP6n4CPW9DwXGzLrdvCpJ7YXm9LSJX2UpW9rX96wruq/iDaHpctfvN3Za2/WCiXZ7P77TzgMnpfDTUXeVd3eXXQ5+6PJ3SOGvtu3tf6xnpZN6aB1JHk7FYVOOavDvW1r5xVY7pBEddhJkk03rgWiy2uDmvddtm1tt5Cgp4AfrEJmKwqkbQS0amgFYrGk/DB1f3o+eYXE7kqY9qrcS3NqBSASDrmQfHIRdYGXIXDLIt3Wq113WBIIFc+Wn+sJdF9CrKdWmqttxBWYwteWRRgeVwoKa/Qxq2OBw6KyMvq2pw1JqaildTkDUa59sen8rIp4k8vC0kVC4RsE90q5d8oqrXNyQfcAMh8TpB8J0rPfEbPFym4aqyqacsuwnTTxi6wzSMRvJvWsBu6VGtM9Mz45+OY8fhv4ZmaUq25L2dgz1IqSPKMDzKn00uTVv2hj1D2q81Vuzty+vzjmwcrEJ1WXracv0jN1bCu06a1q2hFa2utKUFAdMv94dwnSe/dKbZqtLtDUAAkV1rXwHh2wtYLn8pZ05d+R8dFyMPvJgZd11f2OzMRKTJZ3uTBr7LbPXKlB9Idk45ZvWbiAut155fCmfhHYmTc9yTG3bd1c651pTXs+dOcZ+5e9UU6v0LrNXh2Frf3Yr2fpziEpVsue5lZjuzG5+7SnuyEMDpJUdpeyut45lulRQeHZ5iDSOkcNNfctbdAut0zoI7qtejutMSPo19ySJbNnvW/E+6CpMkcWyW74Vhufiejt5rlul5L2Dw19x+HuhFJ3R63WNxZXWgAECvZ2A+OfhHJulymd1HmI6RkSOr61andWuVCc6RB+nWR9mkjetv5UAqf6H3wCbjej8B6y3aMzVW2pY5VJqdMuXaBER0nImvKXD+r0F2QopoaZZVFR5eEXWJNco7uD+F6Tm4h7dky28LTFpqIdUTWdeG3W6M/K6SbD4nZ2qqtXxz7TXxFM4BjOmsS/B9krDrZVPLxoK6Qv1rqvxXB3dSNJNODwt0x7efDma1FfdqPnAR0lKe5U3VWh4QD2kaeOvZGUn9OXYZlRWZdFbM51P1IOX9Ir8X0gzvtHa3doqrrqan4V1i2P4Lf8hHm/Re9KT/SH/h24uOZdnQ6/XSKqZh2lW2TbZWd12WY0HmYrJeObqM3DxeFDQD36wVsZN3pj22r8dRG+MLj8SVZmWEvvXXXLTyPh+84XnYtd5t5rf8AenyrCq9JqnVt3frrHYzEbWSqvu87V+dae4Q6xtPkm7Y7h+lmSSuy6tBd9DAj0jNkMSkyUb8yzqAW8c4qHeaqWpvMzeQ8T2ZwMMXNCqC0DNjr84r2JB3DVy5eJvlLdbLVR2jKo0pmRr4ZeFYYGE2uGmSvWXTpShW0oak5ClCcyOWpHKkVmL6QZZ0qWjKyzGqq3VCUApUHQ6GupFTzgi46ak6VveoaVLeVaxqQwUDKuZrTLxB555ai9bMmLwaTo7BrKRVRmVs71zO8QSadpqR8Pfkedhl9VfNZllqG7QSaD30zPz98UUnpVpuM2eH20xZdyMq1ahAGpp2geNAdeVzh8Yr4aavFundXKgOVNMzoK+EedljJL6mboyLQvithP3Zu6t1WZWFQRaKVGoJHjn7ohJw8pJzeql7RZfWXnkc/HQc8hDMpsNf63Z8Suq5KRQkjIZ560pz55mG5byFe1/WTZlfgSAS1BnShr8aQHVStIZaEPRZUp5Xo6tsL6XNkaA5toKEmp/XSINip8pJDPba1bWaoFARvADMCppmRmQOcM4vFSpWGaxmlsrANdLamdaZUyqc65Z05ZxncZ0lPm7Jtls7Zqy2W0ABSTmVzINAMxkDyzytixVk8oFPS4NNhsdKe6Q7cPFvU1NOXaSf3r2Lw+13UmtL/ALtQBkMtSCBWgyzPbGd6NwU99n6RNumMtDs9xUbME/Kmg0PZF5h9hKwzTN6c11bmYgCugApkAKZ0rpz0S8Sx1+LFVemAPQyzd31jLp9oa00uJzqaZnLKopUCEZxbD3K6rJtZhKVlYXnMUoRmM2Fe00rnFt6VuXO1rMxCLLUUypWlaEEZ61+HKp6SwluJ2mEWTc32uqsSMiDllQDSp7Yribp/mzm9LgSWRNxs5m4blFrTMtdNdDQ/L3Vdl4Fr12TL6MzIFa4cQAoQPjSnjFeJGJ2zNiLdgv5zSpJIApWpIp455jMgSfYy3Wtcw5EVBzLZAk1PbTM6EGupy/T4J9Xti07FNh8TIXh3LGbPmRqda15cq++EWmtNtXq9X3kk/T6eEMY3C2u0u25rt5rbSaZ5gUzIz0yqM+xfBFVSazt1t3npXIdtRUecaJSSErIDvlfZo3Dld7tSPj9BHk+ZKR2Z1/lkfpEVw7SsNcn2rMtsvWgFakntz8xCmJw817b/AAu7KE0rXtoCYrKTB17Cu96M27vNT3a8uXL5xHFYlZSL1m0/fyhWbJmrJu9si3nStBn5xIYRm3prcLV88/6+RivTIOoGJ173XN2/vOCyZrX2u3+LPlHLh1bg3W73Z4DxrX3Q5Kw0qU7Xst1tfChFDr79INOUFta2RFzIrcKtW3yH9RDcrCypkvfRWIOXbSgpE5MpbFvuuu4rRUVNBlz5Ckeviklk1UirE58zziDb9E+oVwuN/wDUsS+Hmy5bLKf1jZ0bIBgKE+IIrSmozg87ETXeZi04Wt2TNSrkhK5ZkZqNKafGKTDYqa2Axcu1llsy3qq5OtGzpQ0Pj4k8zFvKxaSsTPmSrt1QEXZ0O5UELmdQDQn5GkVrHp8f4BPa0PDpNZuMWQk1ZLMqjYWhVqCDaGGdSSTnWpqCc8z9H4zDYXGLPlYNsOsxhbaxoQerSlEoQM+ymtaxhXLba61t5t3UNWuVQDQE0rSNR0biNkmxdpi3Tau0mYDRGGamhquagkEGorutQiEy/HmZ4HlvwX2IkPPxk9ZqzrrRu6E1yIrzAryOh1NKQ5JxM3EbL0hpd0xijTLbaEtQCpOtSRShBJ1EVZVMG8tsazTtoyIk6XzqRUZaAClc9ANagk+LKzZ0tl2a6zrbRRXtFCCKG0kjTKj6DdMedUb4ZomtFrPkq6bXDzfs1YcPMS86ADI1A1BFDyik6bl2Okt91bjOeZlRakrkBpkAaaEuOcWSLNw87bo27Mo6a0vKEUFB2ilPZBMVHTEjE+h7TESt1n+0aluQABr20JoPflAw8WJkp64E1x8+VbMw7NvNRlXkM6DXxap8PfFv0NOaa/8AF8VlFurdQjiIBGQBAA5VHPWv6IwSzcTNwyNxWyVa2hANbmGXdvOcNTBisKn8LKW6ZU3bptUgEGvIUAFTkaZGlIvlUvcoim1yzVypeGW2Qm9bTdupUnQkDlkTSlPDKEsVIxMqdt0n7a5iWVq7woNKAUFfqM8oogWRFV5ExW12+qknXkRX39vbHjdJynRVxc9ma4WM0sZk1FDTQUOvidKkxkn41J8Fu6muSxlYpke3ELLu1W6lDkCSKa1py+Pihicem2b7O20F5isa55gAHIZknmfOgqOlDNlPa1zTbA77oFLgK5DsN2Wgy7IVE7aozIy71u720zGvgB4+6NsfGS5IPJ6Cz3u2jdZnsX7wALHLwIHxOlIgpaa/o3DcxN3O6orQjs0zyz+MX3SciUqSpabq4dhtdKCuS68wqjLwitKYbD2tvbzHilqpFcyQKZ8tQP0is0nO9C8Ck2YyyVs3VtorNTlQHTStNfHsgpE/0ZWt3pig3MtSldAO00zPYKduUm2C3ekMzKq7TlkAQN3sFOQ1pCc7HzZrszsy3MAvYAPll/Uw658ID16JTZTJte7ld8f35e+AmfNsudd3y0NB9TDCLNm3dX2eyhAPzJ8vGPcUkqbJt3rddmup0AA8eUcnpnJCErGqm6lrc/DMAf18zDaFnRsSi7rZeOYzA7dYi2BXbKs3dlWU3srKDs1pSnnB16PuRZCN6hlBVbzXmD2ZAhs/jzh6cLkZJHmK2uHfDM+7cl6s1aVqR+n7qIUmATKNLZKGpPFrXwp9Itulp+1RVuXdy3WoNADprnT5wohaVh5fo8xJFxNwVTVjXU0EJjr8Q8FYVafg57SptuxW95dxrUtYAABSuZPID31jyXiVeTNl4jGLdMUK2szIDkAKEACla1hmVKlz06SmyW9RiMLM2Ss1SoRlJUkACtKH3EduVKtlu9xWiq9u6QfcKmNcpMRLRYjCT5UmZsmWZtrWactClBUa8jvGo7COVYUv/iV9HumNkWtU0K0oaE5gZkaARKTtJqbPafaUquR55CpyAArppX4GwwolYWTuTd61Qy6AACpJ7SM/hXsjnWvIS1XELiMHg1bdtVRvMLnsocjXKpJ10FOQzcw3SF6Lhn2azV9RKnKqrs3AJRRWhZTkuYoMtM7sxLxTbzcV2S8hQ1y7SIUm4xW2S9Xgt0FKmvx08ozdjYytm8k9KyJGDly8RtLas+wX2SaAnsBqc+QFASBVCZ0omPafhPSVl3BXlLMoFCk5ioAFBkRXShoTUxTTJ1s5mTZzGmKsxWmfzCaXKR45nkcvExW9IFts06Vu3KDs61pRRmOWef15wMfxZ3/ZzttaNL0Hj2wU6btd1lajXZWUJPvqSBB+kZzTUXFo0tUaolNd9mANEU0N9KGtBmdVAJjNSnmvOVuLS73gAVJ50oR8YPN2811VLWZqBbWqa1AFSTlqcste2B2EsnUSVPwRTHYnDpt02zK2W2aZWp0oT21gsrpSfNvZJuznzlpcqmr1NCCeRJFaZVOXOIJhv4BVfvKUW2huJAIqCKVB1IofA5wuMLdhrnb168PInOmfnWNHTDGb0M4jFekPNbhVqXXa0pQDL3V+AgG22X4WHyNYG79bqtxW8q1IHlnER6232v3XzEcp9EWPTukpr71zcQ86Zn305x5OnNN4G7N1sxXmf3nCqyf4ZmdWuVhvMwAtzB1Na5/WPCdk9r3LcwtXs7fhXKsDtpeDtNDEzGXybX4vmADQ/p5RM2yk3+stWXs5CoPPWuXzhMH8zNS3968vOJrIaa67zLapLNzApmaa0yp5R3SkOhtMZubN+7YrW00HOmn+sTk4pZT7R/Ab28Mwa/pz5GFC/rrkuVVcOtrU9zeNez4QOaqTZyzJVqy2rw6muZFPAginZnA7aCmXBnyk4GXZNUovlWnbSoy1z5wvPxyypK2cKubd7qmhI8QSB+zCsg/wc2/eZaWrdkmedaEVBFRqKePKumYpW9W63L94g01yOdPjWOWFMOmW0uZ6RJmTXnrvVLS7WuK8yDSnLStcvdEjPZgpUMBaKWkggeOcV7y2VFmSlmMrcNy0odNBqNIIyLiTdaCBopFbR5w3Qg8lmPscT/7l1+GxbL3ZDyEZlftF+5+gjo6GxFH4H5irLeVs1C7w4RTnHuI4P/iH/wCo6OjkI/YpM/m/dH1MCQD0nQcQ+ojo6KiIspHAv9231aBt/wAQvuP+ZY9joivLF9nknjb7i/SH8Bx/hH1jo6OyHLyhzol39J6Q3m+zm8/D/Uwp/O/C30jo6IL+Q9eEJv8A8PP/AB/rHkwD/wAOkZDiP1jo6NCEQRf+Jb2sQhPjmYLOzw2Grn68fQR0dAfkMeSvbq/3h/SGO794x0dBrwIFmfbN/dEfKANwL98f5THR0KvY68DWCRJmCxzuis+wJuIqa0OcVJ6v3o6Oh8flln/FFt0AiP0lKvRW4dRXkYDMAOKnVANGoPMx0dAflg/4R//Z" alt="123">
+    <img src="./images/thiennhien1.jfif" alt="456">
+    <button>loggin</button>
+    <button>register</button>
+    <div>
+        Nội dung phần header
+    </div>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, tenetur provident. Dicta animi culpa nihil, explicabo fugit, ullam fugiat et in dignissimos eos unde sapiente labore at dolor asperiores voluptate.
+    </p>
+    <ul>
+        <li> lập trình html</li>
+        <li> lập trình css</li>
+        <li> lập trình JavaScript</li>
+    </ul>
+    <ol>
+        <li>quả cam</li>
+        <li>quả táo</li>
+        <li>quả chuối</li>
+    </ol>
+</body>
+</html>
