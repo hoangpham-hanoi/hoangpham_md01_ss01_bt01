@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học lập trình</title>
+    <link rel="shortcut icon" href="../image" type = "image/x-icon">
+</head>
+<body>
+    <!-- 
+    table: bảng
+    - Cách tạo bảng:
+        + Các thẻ hay dùng trong bảng
+            thead: phần đầu
+                tr: hàng
+                td: cột
+                th: Nhãn của bảng
+            tbody: phần thân
+                tr
+                td
+            tfoot: chân bảng
+                tr
+                td
+            caption: Tên của bảng
+        + Các thuộc tính (property) trong bảng
+            border: độ dày của viền
+            cellpadding: khoảng cách từ text đến viền của ô
+            cellspacing: khoảng cách từ viền của ô đến viền của bảng
+            bgcolor (background color): màu nền của bảng
+            bordercolor: màu đường viền
+            colspan: gộp các cột lại với nhau   
+            rowspan: gộp hàng
+    -->
+    <table border="1" bgcolor = "pink" bordercolor = "violet" cellpading ="10" cellspacing = "1">
+        <caption><em>Quản Lý Học Sinh</em></caption>
+        <thead></thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên lớp</th>
+                <th>Mã lớp học</th>
+                <th>Khóa học</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Java</td>
+                <td>JV11072024</td>
+                <td>Lập trình Java</td>
+            </tr>            
+        </tbody>
+        <tfoot></tfoot>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+    </table>
+    <table>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
