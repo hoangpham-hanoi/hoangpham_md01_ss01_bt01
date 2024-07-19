@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Nội dung buổi học:
+    1. ý nghĩa tác dụng của việc sử dụng form
+        form: là một biểu mẫu thu thập thông tin gửi lên server.
+            vd: form đăng ký, đăng nhập; form lấy thông tin khảo sát; ...
+    2. các thuộc tính cơ bản của form
+        action: địa chỉ server (nơi nhận dữ liệu)
+        method: phương thức gửi dữ liệu
+            + phương thức POST
+            + phương thức GET
+    3. các thẻ hay dùng trong form
+        input: tạo 1 ô cho người dùng nhập dữ liệu
+            + các giá trị của thuộc tính type:
+                type = "text": đây là giá trị ban đầu của ô input, có thể nhập mọi dữ liệu
+                type = "password": khi nhập không hiện mật khẩu
+                type = "radio" name = "test": chỉ chọn 1 đáp án
+                    name: là thuộc tính (CSS, lấy dữ liệu, gửi dữ liệu lên server)                    
+                type = "checkbox": chọn nhiều đáp án
+                type = "email": khi nhập email phải đúng định dạng (abc@gamil.com)
+                type = "date": chọn ngày tháng năm
+                type = "time": thời gian
+                type = "color": chọn màu
+                type = "range": tiến trình
+                type = "month":chọn tháng
+                type = "week":chọn tuần
+                type = "search": hiện thị nút clear nội dung search.
+                type = "number"
+                placeholder: gợi ý cho người nhập tên
+                value: giá trị người dùng đăng nhập trong input
+                autocomplete: tự động lưu giá trị đăng nhập lần trước ="off": tắt 
+        label: 
+            + khi giá trị của thuộc tính for trong label = giá trị của thuộc tính id trong input, 
+            thì khi click vào thẻ label sẻ tự chọn vào ô input
+        thuộc tính id là thẻ định danh cho thẻ (element)     
+        
+    4. sử dụng thẻ button
+        tạo nút bấm để gửi dữ liệu
+        thẻ button trong form: mặc định khi nhấn vào button trong form thì dữ liệu được gửi lên server
+        disable: không hiển thị nút bấm
+    5. sử dụng thẻ textarea
+        tạo 1 ô nhập dữ liệu
+    6. sử dụng select-option (sự lựa chọn)
+        chọn nhiều giá trị trong nhiều sự lựa chọn
+    -->
+    <!-- 
+        vd: tạo 1 form cho người dùng đăng ký:
+            + yêu cầu người dùng nhập các thông tin
+                email
+                sđt
+                tên đăng nhập
+                mật khẩu
+                confirm mật khẩu
+    -->
+    <form action="">
+        <label for="email">email</label>
+        <input id = "email" type="text" placeholder="mời nhập tên đăng nhập" value="giá trị tên đăng nhập trong ô input">
+        <input type="radio" name="Test">A
+        <input type="radio" name="Test">B
+        <input type="radio" name="Test">C
+        <input type="radio" name="Test">D
+        <input type="checkbox">
+        <input type="checkbox">
+        <span>type = email</span>
+        <input type="email">        
+        <br>
+        <span>type = date</span>
+        <input type="date">
+        <br>
+        <span>type = time</span>
+        <input type="time">
+        <br>
+        <span>type = color</span>
+        <input type="color">
+        <br>
+        <span>type = range</span>
+        <input type="range">
+        <br>
+        <span>type = month </span>
+        <input type="month">
+        <br>
+        <span>type = week</span>
+        <input type="week">
+        <br>
+        <span>type = search</span>
+        <input type="search">
+        <br>
+        <span>type = number</span>
+        <input type="number">
+        <button>register</button>
+    </form>
+    <form action="">
+        <label for="">User Name</label>
+        <input type="text" placeholder="mời đăng nhập" autocomplete="off">
+        <br>
+        <label for="">password</label>
+        <input type="text">
+        <br>
+        <select name="" id="">
+            <option value="">Tỉnh</option>
+            <option value="">Hà Nội</option>
+            <option value="">Hải Phòng</option>
+            <option value="">Nam Định</option>
+        </select>
+        <br>
+        <textarea name="" id="" rows="5"></textarea>
+        <br>
+        <span>
+            <button>login</button>
+        </span>
+        
+    </form>
+</body>
+</html>
