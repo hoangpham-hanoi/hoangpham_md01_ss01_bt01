@@ -1,0 +1,74 @@
+/* Bài 01 */
+.form-bt01{
+   background-color: pink; 
+   width: 200px;
+   height: 200px;
+   border: 1px solid black;
+   line-height: 1.5;
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+.tieu-de-bt01{
+    font-weight: bold;
+}
+
+/* Bài 02 */
+.form-bt02{
+    background-color: rgb(158, 255, 255);
+    width: 200px;
+    height: 200px;
+    border: 2px solid green;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div input.html:hover{
+    color: red;
+    transform: scale(1.5);
+}
+
+/* Bài 03 */
+.bt03{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transition: all 2s 1s linear;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+.bt03:hover{
+    background-color: brown;
+    border-radius: 25%;    
+    transform: translate(20px,100px)    
+}
+.bt03:hover{
+    background-color: red;
+    border-radius: 50%;
+    transform: translate(50px,200px);
+}
+
+/* Bài 04 */
+.form-bt04{
+    width: 240px;
+    height: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    line-height: 0.7;
+    box-shadow: 10px 10px 30px 10px rgb(188, 188, 188);
+    position: relative;
+    left: 100px;
+    border: 1px solid black;    
+}
+
+/* Bài 05 */
+.form-bt05{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(145, 219, 240);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    border: 2px dotted yellowgreen;
+    line-height: 0.7; 
+    margin-left: 5px;   
+}

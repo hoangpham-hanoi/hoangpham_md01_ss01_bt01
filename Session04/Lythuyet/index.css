@@ -1,0 +1,103 @@
+
+*{
+    margin: 0;
+
+}
+h3{
+    color:#ffff00
+}
+.heading1{
+    color: violet;
+}
+#content1{
+    color: blue;
+}
+.btn{
+    width: 60;
+    height: 30;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(201, 92, 52);
+}
+.login{
+
+}
+h6{
+    color: red;
+}
+h6{
+    color: green;
+}
+.study-code{
+    color: rgb(104, 2, 104) !important;
+}
+#study{
+    color: brown;
+}
+
+.container p{
+    color: red;
+}
+h5,section{
+    font-size: 300;
+}
+
+h1{
+    color: red;
+    background-color: aqua;
+    text-align: center;
+}
+
+p{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+div{
+    text-transform: uppercase;
+}
+.background{
+    background-color: rgb(186, 66, 66);
+}
+
+body{
+    height: 100vh;
+    background-image: url(../../image/image-cropped-8x10.jpg);
+    background-repeat: no-repeat;    
+    background-size: 100% 100%;
+}
+
+.display{
+    display: none;
+}
+
+.div1{
+    width: 100;
+    height: 100;
+    background-color: green;
+}
+
+.div2{
+    width: 100;
+    height: 100;
+    background-color: blue;
+}
+
+.div{
+    display: inline-block;
+}
+
+.box-model{
+    width: 150px;
+    height: 100px;
+    background-color: tomato;
+    /* padding: 5px; cả 4 hướng*/
+    padding: 5x 10px 15px 20px; 
+    /* trên 5px dưới 10px trái 15px phải 20px */
+    border: 1px solid black;
+    margin: 50px;
+}

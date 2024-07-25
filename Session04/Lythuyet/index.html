@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        h2{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1. CSS là gì?
+            + viết tắt cascading style sheets (ngôn ngữ làm đẹp cho trang web)
+            + tên đuôi file là .css
+        2. Nhúng được CSS vào trang web
+            + có 3 cách:
+                c1: inline: viết CSS trực tiếp vào thẻ tag (element)
+                c2: internal: viết CSS bên trong cặp thẻ style và cặp thẻ style nên đặt ở trong phần head
+                c3: external: viết CSS bên trong file có đuôi .css
+                Ưu nhược điểm của 3 cách:
+                    + inline: nhanh, nhưng khi code nhiều, mới học nhìn code sẽ rối
+                    + internal: cấu trúc gọn gàng hơn, nhưng có nhược điểm là chỉ mình file html đó dùng được thôi, các file html khác 
+                    không dùng được
+                    + external: viết css rõ ràng, dễ chỉnh sửa và có thể dùng chung cho các file html khác. Nhược điểm: tạo file, tạo
+                    link cho file css.
+                ==> thực hành: dùng external
+        3. Sử dụng được CSS selector
+            selector: bộ chọn dể CSS
+            định danh cho các elements:
+                +class: cách dùng .tênclass
+                    đối với class thì dùng chung được
+                    hoặc có thể dùng riêng
+                    1 element có thể có nhiều class
+                +id: cách dùng #tênid   id là định danh duy nhất
+            Mức độ ưu tiên từ thấp đến cao trong CSS: element ==> class ==> id
+        4. Sử dụng được CSS để tùy chỉnh văn bản
+        5. Các thuộc tính cơ bản trong CSS
+            Bộ thuộc tính màu sắc cho text (color):
+            color:
+                Các giá trị của color
+                + đặt theo tên tiếng anh
+                +theo RGB
+                + theo RGBA (red green blue alpha)
+                    alpha: độ đậm nhạt (từ 0 đến 1)
+                + theo hsl (hue saturation lightness)
+                + theo màu hexa
+            Bộ chọn font cho text:
+                + font-size: kích thước của text
+                + font-weight: độ đậm nhạt của text
+                + font_family: kiểu chữ
+            Bộ thuộc tính về căn chỉnh text:
+                + text-align: căn chỉ vị trí của text
+                + text-decoration: bỏ gạch chân
+                + text-transform:
+            Bộ thuộc tính về background
+                + background-color: màu nền
+                + background-image: màu nền ảnh
+            Bộ thuộc tính display:
+                + display: none
+                    biến mất
+                + display: block
+                    mặc định: h1, p, div,...
+                + display: inline
+                    span, a, img, button,...
+                + display: inline-block
+                    hiển thị theo dạng inline, nhưng có thể dùng các thuộc tính của block
+        6. Mô hình hộp (box model) trong CSS
+            - Content: nội dung của box
+            - Padding: là khoảng cách từ border đến content
+            - Margin: là khoảng cách giữa các phần tử (elements)
+            -Border: độ dày của viền
+
+    -->
+    <h1 style="color: red;">CSS basic!</h1>
+    <h2> CSS internal</h2>
+    <h3 class="heading1" id="content1">CSS external</h3>
+    <h3>Lorem, ipsum dolor.</h3>
+
+    <button class="btn login"> login</button>
+    <button class="btn register">register</button>
+
+    <div class="main">
+        <div class="main_product-hot">
+            <!-- danh sách sản phẩm hot -->
+        </div>
+        <div class="main_product">
+            <!-- danh sách sản phẩm -->
+        </div>    
+    </div>
+
+    <h6 class="study-code" id="study">
+        học lập trình tại rikkei academy
+    </h6>
+
+    <div class="container">
+        <p>tạm biệt</p>
+    </div>
+
+    <h5>
+        css basic
+    </h5>
+    <section> rikkei academy</section>
+
+    <h1>css basic</h1>
+
+    <p>font-size text</p>
+
+    <a href="">contact</a>
+
+    <div>
+        text transform
+    </div>
+
+    <p class="background">màu nền</p>
+
+    <p class="display">giá trị của thuộc tính display: none</p>
+
+    <div class="div1 div">div1</div>
+    <div class="div2 div">div2</div>
+
+    <div class="box-model">
+        box-model
+    </div>
+
+</body>
+</html>

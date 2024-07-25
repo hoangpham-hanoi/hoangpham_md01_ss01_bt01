@@ -1,0 +1,73 @@
+.opacity{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.border-radius{
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    border-radius: 5px;
+}
+
+.box-shadow{
+    width: 80px;
+    height: 80px;
+    background-color: #dbdbdb;
+    box-shadow: 10px 10px 10px 4px red;
+}
+
+h1{
+    text-shadow: 5px 5px #dbdbdb;
+}
+
+.linenear-gradient{
+    width: 200px;
+    height: 200px;
+    background-color: lin;
+}
+
+.position{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    position: static;
+}
+
+.position-relative{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: red;
+    position: static;
+    left: 20px;
+    top: 20px;
+}
+
+.parent{
+    width: 500px;
+    height: 500px;
+    background-color: #dbdbdb;
+    position: relative;
+}
+
+.position-absolute{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: red;
+    position: absolute;    
+    bottom: 0;
+    right: 0;
+}
+
+.container{
+    height: 5000px;
+}
+.fixed{
+    
+}
+

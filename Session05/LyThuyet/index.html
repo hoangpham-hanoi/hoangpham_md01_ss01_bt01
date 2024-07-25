@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- 
+        CSS3: là phiên bản nâng cấp của CSS
+        CSS: ra đời 1996
+        CSS3: 2010
+        CSS3 cung cấp tính năng gì mới?
+            1. Pseudo -Classes
+            2. Màu trong CSS3
+            3. CSS3 RGBA (red, green, blue, alpha (0-1))
+            4. CSS3 HSL và HSLA (hue, saturation, lightness, alpha)
+            5. Opacity (độ trong suốt, lớp mờ)
+            6. Border radius: góc bo tròn đường viền
+            7. Hiệu ứng đổ bóng:
+                + box-shadow: đổ bóng elements
+                + text-shadow: đổ bóng nội dung text
+            8. Linear Gradient (Dải màu pha trộn giữa các màu)
+            9. Position: định vị vị trí của elements
+                + static: trạng thái mặc định
+                + relative: vị trí tương đối, lấy vị trí ban đầu làm gốc, muốn di chuyển thì sử dụng các thuộc tính top, bottom, left, right
+                + absolute: vị trí tuyệt đối
+                    xét xem thằng cha nào chứa nó có thuộc tính position (khác static) thì lấy vị trí thằng cha làm gốc, nếu không có
+                    sẽ ăn theo màn hình trình duyệt
+                + fixed: cố định
+                + sticky: kết hợp với thanh cuộn
+            10. Transition: hiệu ứng chuyển động
+    -->
+        <div class="opacity">
+            opacity
+        </div>  
+
+        <div class="border-radius">
+            border-radius
+        </div>
+
+        <div class="box-shadow">
+            box-shadow
+        </div>
+
+        <h1>Hiệu ứng độ bóng</h1>
+
+        <div class="linear-gradient">
+            linear-gradient
+        </div>
+
+        <div class="position">
+            position
+        </div>
+
+        <div class="position-relative">
+            position-relative
+        </div>
+
+        <div class="parent">
+            <div class="position-absolute">
+                position-absolute
+            </div>
+        </div>
+        <div class="container">
+            <div class="fixed">
+                fixed
+            </div>
+        </div>        
+</body>
+</html>
