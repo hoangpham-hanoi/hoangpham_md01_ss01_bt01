@@ -1,0 +1,74 @@
+.header{
+    height: 56px;
+    width: 100%;
+    background-color: #007aff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;    
+}
+.tìm-kiếm{
+    width: 300px;
+    height: 40px;
+    background-color: #ffff;  
+    border-radius: 10px;  
+    color: black;
+    font-weight: lighter;
+    text-align:end;
+    line-height: 40px;
+    }
+.user-icon{
+    width: 40px;
+    height: 50px;
+    background-color: #ffff;
+    border-radius: 50%;
+    color: #bbbcbe;
+    text-align: center;
+    line-height: 50px;
+}
+.trang-chủ a{
+    text-decoration: none;
+    color: #ffff;
+}
+.sản-phẩm a{
+    text-decoration: none;
+    color: #ffff;
+}
+.tìm-kiếm input{
+    width: 250px;
+    height: 36px;
+    font-size: 24px;
+    border: hidden;
+}
+.giới-thiệu a{
+    text-decoration: none;
+    color: #ffff;
+}
+.liên-hệ a{
+    text-decoration: none;
+    color: #ffff;
+}
+.đăng-ký button{
+    background-color: #007aff;
+    border: hidden;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+}
+.đăng-nhập button{
+    background-color: #007aff;
+    border: hidden;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;   
+}
+.user-name input{
+    width: 200px;
+    height: 36px;
+    font-size: 24px;
+    border-style: hidden;
+}

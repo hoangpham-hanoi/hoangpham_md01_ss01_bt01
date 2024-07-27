@@ -1,0 +1,93 @@
+
+.div1{
+    width: 350px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;      
+    margin-bottom: 50px;  
+    font-size: 24px;
+}
+.phone{
+    font-weight: bold;
+    font-size: 18px;
+}
+.phone #phone{
+    width: 350px;
+    height: 36px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.button #button{
+    width: 360px;
+    height: 45px;
+    border: none;
+    border-radius: 4px;
+    background-color: blue;
+    color: #ffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.text-divider {
+    width: 350px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    --text-divider-gap: 1rem;
+  }
+  .text-divider::before,
+  .text-divider::after {
+    content: '';
+    height: 1px;
+    background-color: #333;
+    flex-grow: 1;
+  }
+  .text-divider::before {
+    margin-right: var(--text-divider-gap);
+  }
+  .text-divider::after {
+    margin-left: var(--text-divider-gap);
+  }
+  .facebook{
+    width: 360px;
+    height: 45px;
+    border: none;
+    border-radius: 4px;
+    background-color: blue;
+    color: #ffff;
+    font-size: 18px;
+    margin-bottom: 15px;    
+    text-align: center;
+    line-height: 45px;
+  }
+  .facebook a{           
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffff;
+    background-color: blue;
+  }
+  .google{
+    width: 360px;
+    height: 45px;
+    border: none;
+    border-radius: 4px;
+    background-color: blue;       
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .google a{           
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffff;
+    background-color: blue;    
+  }
+  .exist{
+    font-size: 18px;    
+  }
+  .exist p a{
+    color: blue;
+    text-decoration: none;
+  }

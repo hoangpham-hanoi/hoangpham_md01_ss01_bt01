@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: #dbdbdb;
+            display: flex;
+            flex-direction: row; 
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+        }
+        .item1{
+            background-color: green;  
+            flex: 1;
+            order: 2;
+            width: 50px;
+        }
+        .item2{
+            background-color: red;
+            flex: 2;
+            order: 3;
+            width: 100px;
+        }
+        .item3{
+            background-color: violet;
+            flex: 3;
+            order: 1;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Flex-box: giúp tạo ra các layout theo ý muốn
+        + Flex-container: khối cha
+        + flex-item: khối con
+    -->
+    <!--  
+    flex-direction:row (giá trị mặc định), trục main axis là trục ngang, trục cross axis là trục dọc
+    flec-direction:column, trục main axis là trục dọc, trục cross là trục ngang
+    hai trục main và cross luôn vuông góc với nhau.
+    main axis sẽ có các thuộc tính:
+        + justify-content:
+            giá trị: center = chính giữa
+            flex-start: sắp xếp từ đầu
+            flex-end: sắp xếp từ cuối
+            space-around: có mép đầu, cuối = 1/2 so với khoảng cách giữa, chia đều so với giữa
+            space-between: ra giữa, tính từ mép đầu.
+            space-evenly: đều
+        + cross-axis:
+            align-items: center (giữa), flex-start (đầu), flex-end (cuối)
+            align-content: được sử dụng giống với justify-content
+        + flex-wrap: nowrap (mặc định), wrap-reverse, wrap
+        + flex: tỷ lệ của phần tử
+        + order: thứ tự sắp xếp phần tử
+    -->
+    <div class="container">
+        <div class="item item1">1</div>            
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+</body>
+</html>
