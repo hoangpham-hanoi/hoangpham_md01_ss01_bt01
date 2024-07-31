@@ -1,0 +1,70 @@
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+        body,html {
+            height: 100%;
+            color: #777;
+            line-height: 1.8;
+        }
+
+ /* Create a Parallax Effect */
+ .top{
+    width: 100%;
+    height: 500px;
+    background-image: url(../../image/9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+    position: relative;
+ }
+ .nvbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+ }
+ .nvbar-part1 {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;       
+ }
+ .nvbar-part2 {
+    width: 100px;
+    text-align: center;
+ }
+ .home,.about,.portfolio,.contact,.search {
+    text-decoration: none;
+    color: #fff;    
+ }
+
+ .text {
+    width: 400px;
+    height: 50px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, 0.488);    
+    position:absolute;
+    top: 40%;     
+    left: 35%;
+ }
+
+ @media screen and (max-width:600px) {
+    .about,.portfolio,.contact,.search, .text {
+        display: none;
+    }
+
+    .top{
+        width: 100%;
+        height: 500px;
+        background-image: url(../../image/9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.webp);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: -100px;        
+     }
+ }

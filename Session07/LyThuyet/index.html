@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .responsive{
+            background-color: red;
+        }
+        /* desktop first */
+        @media screen and (max-width: 1200px) {
+            .responsive{
+                background-color: green;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            .responsive{
+                background-color: yellow;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .responsive{
+                background-color: violet;
+            }
+        }
+        
+        /* mobile first */
+        @media screen and (min-width:640px) {
+            .responsive{
+                background-color: violet;
+            }
+        }
+        @media screen and (min-width:768px) {
+            .responsive{
+                background-color: tomato;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 
+    RWD - responsive web design
+    Cách responsive:
+    1. Các breakpoint
+    320px-480px: màn hình cho các thiết bị smartphone nhỏ
+    480px-640px: smart phone vừa
+    640px-768px: tablet nhỏ
+    768px-992px: tablet vừa
+    992px-1200px: tablet lớn
+    >1200px: màn hình máy tính
+    2. Thiết kế rwd theo kiểu mobile first (điện thoại trước)
+        + tức là sẽ code trên giao diện điện thoại trước
+        + sau đó sẽ thiết kế tương thích với các màn hình máy tính bảng, máy tính để bàn,...
+    3. Thiết kế rwd theo kiểu desktop first (mày tính để bàn trước)
+        + tức là sẽ code trên giao diện máy tính trước
+        + sau đó sẽ thiết kế tương thích với các màn hình máy tính bảng, rồi xuống điện thoại.
+        Cú pháp: @media only screen and (max-width:)
+    -->
+        <div class="responsive">
+            responsive
+        </div>
+</body>
+</html>

@@ -1,12 +1,14 @@
 
 .div1{
     width: 350px;
-    height: 36px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;      
     margin-bottom: 50px;  
     font-size: 24px;
+    background-color: blue;
+    align-items: center;
 }
 .phone{
     font-weight: bold;
