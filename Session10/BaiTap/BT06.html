@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson10-Array</title>
+</head>
+<body>
+    <h3>Bài tập: Sắp xếp mảng theo yêu cầu</h3>
+    <script>
+        /* Viết chương trình khai báo mảng số nguyên gồm nhiều phần tử bất kỳ, tiến hành di chuyển các phần tử âm lên đầu mảng, 
+        phần tử dương về cuối mảng và in kết quả ra màn hình console. */
+        let array=[10,-3,5,-11,-20,16,35,18,-7,9,2];
+        let array_sort=[];
+        while (array.length!=0) {
+            let min=Math.min(...array);
+            for (let i = 0; i < array.length; i++) {
+                if (array[i]==min) {
+                    array_sort.push(array[i]);
+                    array.splice(i,1);
+                };                
+            }
+        };
+        console.log(array_sort);
+        console.log(array);
+        
+        
+    </script>
+</body>
+</html>

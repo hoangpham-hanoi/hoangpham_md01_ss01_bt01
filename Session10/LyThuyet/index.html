@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Lesson10-Array></Lesson10-Array></title>
+</head>
+<body>
+    <script>
+        // Khai báo mảng chứa danh sách sinh viên
+        let students=["lan","hồng","hoa","huệ"];
+        const newProduct = new Array();
+
+        console.log("đếm số phần tử trong mảng",students.length)
+
+        // thêm phần tử vào trong mảng
+        /* 
+          1. Dùng phương thức push
+        */
+       students.push("nhài");
+       console.log(students);
+      // thêm vào đầu của mảng? dùng unshift()
+      students.unshift("đào");
+      console.log(students);
+      //thêm vào vị trí bất kỳ 
+      students.splice(-1,0,"nam");
+      console.log(students);
+      //truy suất vào phần tử trong mảng
+      /* console.log(students[2]);
+      for (let i = 0; i < students.length; i++) {
+        console.log(students[i]);
+        ;        
+      }; */
+      /* for (const a in students) {
+        console.log(students[a]);
+        
+      }; */
+
+      for (const a of students) {
+        console.log(a);        
+      };
+
+      let number =[10,20,30];
+      for (let i = 0; i < number.length; i++) {
+        document.write(number[1]);
+        document.write('br')
+      };
+
+    //update phần tử
+      students[0]="hồng vân";
+      console.log(students);
+      students.splice(students.length-1,1,"tâm")
+      console.log(students);
+
+    // xóa phần tử
+      students.splice(1,1);
+      console.log(students);
+
+    // Các phương thức dùng trong mảng
+      let result = students.slice(0,2)
+      console.log(result);
+      let resultDelete = students.shift()
+      console.log(resultDelete);
+      
+    </script>
+</body>
+</html>

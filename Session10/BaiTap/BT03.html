@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson10-Array</title>
+</head>
+<body>
+    <h3>Bài tập: đếm số lân xuất hiện của phần tử trong mảng</h3>
+    <script>
+        /* Viết chương trình khai báo mảng số nguyên gồm nhiều phần tử, yêu cầu người dùng nhập vào một số nguyên bất kỳ
+         và in ra số lần xuất hiện của số đó trong mảng lên màn hình console. */
+    let interger_array=[0,-1,2,-6,4,10,15,20,2,5,6,4,2,3];
+    let a=+prompt("nhập vào một số nguyên:");
+    let interger_frequency=[];
+    for (let i = 0; i < interger_array.length; i++) {
+        if (a==interger_array[i]) {
+          interger_frequency.push(interger_array[i])           
+        };        
+    };
+    console.log(interger_frequency.length);
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson10-Array</title>
+</head>
+<body>
+    <h3>Bài tập: Luyện tập sử dụng mảng</h3>
+    <script>
+        // Viết chương trình yêu cầu nhập vào hai số nguyên dương a và b, lưu các số chia hết cho b trong khoảng từ 1 đến a
+        //  hoặc các số chia chia hết cho a trong khoảng từ 1 đến b vào một mảng và in mảng đó ra màn hình console.
+        let array=[1,11,3,10,5,2,6,8,9,20,30,36,42,48,50,60,76,90,15,21];
+        let a=+prompt("nhập vào số nguyên dương a:");
+        let b=+prompt("nhập vào số nguyên dương b:");
+        let number=[];
+        for (let i = 0; i < array.length; i++) {
+            if (array[i]%a==0 && array[i]<=b) {
+                number.push(array[i])
+            };    
+        };
+        console.log(number);
+        
+    </script>
+</body>
+</html>

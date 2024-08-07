@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson10-Array</title>
+</head>
+<body>
+    <h3>Bài tập: Sử dụng vòng lặp</h3>
+    <script>
+        /* 
+        Viết chương trình khai báo 1 mảng gồm các phần tử bất kỳ, Tiến hành in ra các phần tử là số nguyên trong mảng,
+         nếu không có số nguyên nào thì hiển thị “Trong mảng không tồn tại số nguyên” lên màn hình console.
+        */
+       let array=["nam",0,3,5,6.2,7];
+       let interger =[];
+       for (let i = 0; i < array.length; i++) {
+        if (Number.isInteger(array[i])==true) {
+            interger.push(array[i]);            
+        }     
+       };
+
+       if (interger.length>0) {
+          console.log(interger);          
+       } else {
+        console.log("trong mảng không tồn tại số nguyên");        
+       }
+       
+    </script>
+</body>
+</html>

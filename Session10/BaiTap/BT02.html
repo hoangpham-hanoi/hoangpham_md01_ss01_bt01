@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson10-Array</title>
+</head> 
+<body>
+    <h3>Bài tập: Tìm kiếm phần tử trong mảng</h3>
+    <script>
+       /*  Viết chương trình khai báo mảng có sẵn gồm nhiều phần tử, yêu cầu người dùng nhập vào giá trị bất kỳ
+         và tìm kiếm trong mảng. In ra vị trí của phần tử trong mảng nếu tìm thấy, nếu không 
+         thì in “phần tử không tồn tại” lên màn hình console. */
+        
+      let array=[1,"ly",5,6,"hồng","nhài","phượng","huệ","dơn","ly","cúc","sen"];
+      let hoa=prompt("bạn muốn mua hoa nào? ");
+      let inarray=[];
+      for (let i = 0; i < array.length; i++) {
+        if (array[i]==hoa) {
+            inarray.push(i+1);
+        }; 
+      };
+      if (inarray.length!=0) {
+        console.log("vị trí của hoa trong mảng:",inarray);
+        
+      } else {
+        console.log("phần tử không tồn tại");        
+      };
+
+    // Dùng idexOf()
+    // let array=[1,"ly",5,6,"hồng","nhài","phượng","huệ","dơn","ly","cúc","sen"]; 
+    // let hoa=prompt("bạn muốn mua hoa nào? ");
+    // let result=array.indexOf(hoa);
+    // console.log(result);
+    
+    </script>
+</body>
+</html>
