@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson12</title>
+</head>
+<body>
+    <h3>Bài 1</h3>
+    <script>
+        /* Viết chương trình cho người dùng nhập vào 3 số, viết hàm kiểm tra để tìm ra số bé nhất và in ra số đó */
+        let number1=+prompt("mời nhập số:");
+        let number2=+prompt("mời nhập số:");
+        let number3=+prompt("mời nhập số:");
+        function findMin(a,b,c){
+            if (a<=b&a<=c) {
+                console.log("giá trị bé nhất:",a);                
+            } else if (b<=a&b<=c){
+                console.log("giá trị bé nhất:",b);                
+            } else{
+                console.log("giá trị bé nhất:",c);
+            } 
+            
+        }
+        console.log(findMin(number1,number2,number3));
+        
+    </script>
+</body>
+</html>

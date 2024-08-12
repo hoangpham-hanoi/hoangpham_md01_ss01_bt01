@@ -10,7 +10,27 @@
     <script>
         /* Viết chương trình khai báo mảng số nguyên bất kỳ, in ra tất cả các phần tử 
         xuất hiện từ hai lần trở lên trong mảng đã khai báo. */
-        let array=[0,1,3,2,8,9,2,5,13,14,31,22,11,13,24,22,31,35,9,3];
+        let array=[0,1,1,1,2,2,3,3,2,4,5,4,2,6,9,6];     
+        // dùng for lồng
+        let result=[];
+        for (let i = 0; i < array.length-1; i++) {
+            let count=0;
+            for (let j = i+1; j < array.length; j++) {
+                if (array[j]==array[i]) {
+                    count++
+                }                
+            }
+            if (count>0) {
+                //kiểm tra trong result đã có array[i] hay chưa?
+                //nếu chưa có thì push vào result
+                if (!result.includes(array[i])) {
+                    result.push(array[i])
+                }
+            }
+            
+        }
+
+        console.log("kết quả",result);
         
         
     </script>   

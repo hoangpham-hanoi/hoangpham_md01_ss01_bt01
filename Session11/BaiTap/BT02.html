@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson11</title>
+</head>
+<body>
+    <h3>Bài tập 2</h3>
+    <script>
+        /* Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2 số chẵn.
+        Ví dụ nếu bạn nhập vào 245468 thì kết quả của chương trình sẽ là 2-454-6-8. */
+        let a=+prompt("nhập vào một số bất kỳ:")        
+        let digits=a.toString().split('').map(Number);
+
+        for (let i = 0; i < digits.length-1; i++) {
+            if (digits[i]%2==0 && digits[i+1]%2==0) {                
+                digits[i]+="-";                
+            };            
+        };
+        
+        let result=digits.join("");
+        console.log(result);     
+        
+    </script>
+</body>
+</html>

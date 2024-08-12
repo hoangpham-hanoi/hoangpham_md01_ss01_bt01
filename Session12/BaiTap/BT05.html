@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson12</title>
+</head>
+<body>
+    <h3>Bài tập 05</h3>
+    <script>
+        /* Cho người dùng nhập vào chuỗi kí tự. Viết hàm kiểm tra xem tần suất xuất hiện của mỗi ký tự và in ra chúng
+        Input: “Hello World”
+        Output:
+            Ký tự h xuất hiện 1 lần
+            Ký tự e xuất hiện 1 lần
+            Ký tự l xuất hiện 3 lần
+            Ký tự o xuất hiện 2 lần
+            Ký tự   xuất hiện 1 lần
+            Ký tự w xuất hiện 1 lần
+            Ký tự r xuất hiện 1 lần
+            Ký tự d xuất hiện 1 lần
+        */
+        let texts="Hello World";
+        texts=texts.toLowerCase()
+        let arr=texts.split("");
+        console.log(arr);        
+
+        function frequences() {
+            let result=[];
+            for (let i = 0; i < arr.length; i++) {            
+                let count=1;
+                let temp=[]; 
+            
+                for (let a = 0; a < temp.length; a++) {
+                    if (temp[a]==arr[i]) {
+                        continue
+                    }
+                    };
+                
+                temp.push(arr[i]);
+
+                for (let j = i+1; j < arr.length; j++) {                       
+                    if (arr[j]==arr[i]) {
+                        count++
+                    } else {
+                        1
+                    }
+                }
+                result.push(`Ký tự ${arr[i]} xuất hiện ${count} lần`)             
+        };
+            return result
+        }
+       
+        console.log(frequences());
+        
+        
+        
+    </script>
+</body>
+</html>
