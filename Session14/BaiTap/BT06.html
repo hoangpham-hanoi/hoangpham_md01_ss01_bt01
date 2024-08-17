@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson14</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    #inputField {
+        padding: 10px;
+        font-size: 16px;
+        width: 300px;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    #addButton {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    #list {
+        margin-top: 20px;
+        padding: 0;
+    }
+    #list li {
+        list-style-type: none;
+        padding: 5px 0;
+        border-bottom: 1px solid #ddd;
+    }
+</style>
+<body>
+    <h3>Bài tập: Lấy dữ liệu từ người dùng</h3>
+    <!-- <p>
+        Tạo giao diện như hình, mỗi khi bấm vào nút thì thêm giá trị trong ô input vào danh sách.
+
+    </p> -->
+
+    <div class="container">
+        <input type="text" id="inputValue" placeholder="Nhập giá trị...">
+        <button id="addButton">Thêm</button>
+        <ul id="itemList"></ul>
+    </div>
+
+    <script>
+        document.getElementById('addButton').addEventListener('click', function() {
+        // Lấy giá trị từ ô input
+        var inputValue = document.getElementById('inputValue').value;
+
+        // Tạo một phần tử <li> mới
+        var li = document.createElement('li');
+        li.textContent = inputValue;
+
+        // Thêm <li> vào danh sách
+        document.getElementById('itemList').appendChild(li);
+
+        // Xóa giá trị trong ô input sau khi thêm vào danh sách
+        document.getElementById('inputValue').value = '';
+        });
+    </script>
+
+</body>
+</html>

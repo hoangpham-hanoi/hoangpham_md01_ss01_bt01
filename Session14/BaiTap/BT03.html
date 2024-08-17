@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson14</title>
+</head>
+<body>
+    <h3>Bài tập: Luyện tập sử dụng DOM</h3>
+    <!-- <p>
+        Xây dựng giao diện gồm 1 nút bấm và 1 dòng chữ, khi ấn vào nút thì dòng chữ sẽ thay đổi nội 
+    dung của dòng chữ trên giao diện.
+    </p> -->
+
+    <h1 id="before">This text is optional</h1>
+    <button onclick="changeText()">Press to say hide text</button>
+    
+    <script>
+        function changeText() {
+            document.getElementById("before").innerText="Text after change"
+        };
+    </script>
+</body>
+</html>

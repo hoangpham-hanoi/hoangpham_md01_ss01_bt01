@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson13</title>
+</head>
+<body>
+    <h3>Bài tập: Tìm kiếm đối tượng trong mảng</h3>
+    <script>
+        /* Viết chương trình khai báo mảng gồm nhiều đối tượng Book có hai thuộc tính author và name. 
+        Yêu cầu người dùng nhập tên Auth từ bàn phím thông qua hàm prompt(). 
+        Sau đó tiến hành tìm kiếm thông tin sách theo tác giả. Nếu tìm thấy thì in ra ngoài màn hình
+         đối tượng Book tìm được, nếu không tìm thấy thì in ra “Không tìm thấy sách” */
+        
+        let book=[
+            {
+                author:"Nguyễn Văn A",
+                name:"eco1"
+            },
+            {
+                author:"Nguyễn Văn B",
+                name:"eco2"
+            },
+            {
+                author:"Nguyễn Văn C",
+                name:"eco3"
+            },
+            {
+                author:"Nguyễn Văn D",
+                name:"eco4"
+            },
+            {
+                author:"Nguyễn Văn E",
+                name:"eco5"
+            },
+            {
+                author:"Nguyễn Văn M",
+                name:"eco6"
+            },
+        ];
+
+        // console.log(book);
+
+        // nhập tên tác giả
+        let authors=prompt("tìm kiếm sách theo tên tác giả:").toLowerCase()
+        // console.log(authors);     
+        
+        function findBook(author){
+            for (let i = 0; i < book.length; i++) {
+                if (book[i].author.toLowerCase()===authors) {
+                    return book[i];
+                }                
+            };
+            return console.log("Không tìm thấy sách");
+            
+        };
+        console.log(findBook(authors));
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson13</title>
+</head>
+<body>
+    <h3>Bài tập: Thuộc tính trong đối tượng</h3>
+    <script>
+       /*  Viết chương trình khai báo đối tượng product bao gồm các thuộc tính id, name, price, quantity. 
+        Tiến hành in tất cả các thuộc tính của product và giá trị của thuộc tính đó ra màn hình. */
+        function product(id,name,price,quantity){
+            this.id=id,
+            this.name=name,
+            this.price=price,
+            this.quantity=quantity
+        };
+
+        let product1=new product(111,"MCL",150,100);
+        console.log(product1);
+
+        for (const key in product) {
+            console.log(product[key]);            
+            };
+        
+        console.log("id",product1["id"]);
+        console.log("name",product1["name"]);
+        console.log("price",product1["price"]);
+        console.log("quantity",product1["quantity"]);        
+    </script>
+</body>
+</html>

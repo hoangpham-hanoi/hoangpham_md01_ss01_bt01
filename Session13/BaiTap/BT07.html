@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson13</title>
+</head>
+<body>
+    <h3>Bài tập: Validate dữ liệu đầu vào</h3>
+    <script>
+        /* Tạo một mảng users là một mảng trống.
+        Lấy thông tin từ người dùng để tạo đối tượng user gồm các thông tin sau: id, user_name, email, password
+        Tiến hành validate dữ liệu
+        Tên, email và mật khẩu không được để trống
+        Tên không được ngắn hơn 3 ký tự
+        Email đúng định dạng
+        Mật khẩu tối thiểu 8 ký tự
+        Nếu các dữ liệu nhập vào không thỏa mãn thì yêu cầu người dùng nhập lại dữ liệu
+        Nếu các dữ liệu nhập vào thỏa mãn điều kiện thì thêm đối tượng vào trong mảng */
+        let users_sv=[];     
+
+        let id=prompt("nhập id:");
+        let user_name=prompt("nhập user_name:");
+        let email=prompt("nhập địa chỉ email:");
+        let password=prompt("nhập password:");
+
+        let object={
+            id:id,
+            user_name:user_name,
+            email:email,
+            password:password
+        };
+
+        function validate(users) {
+            // for (let key of users) {
+            //     if(!key.user_name.trim()||(!key.email.trim())||(!key.password.trim())) {
+            //         return console.log("vui lòng nhập lại dữ liệu");
+            //     }
+                
+            // }
+            // ;
+            // if (users.user_name.length<3) {
+            //     return console.log("vui lòng nhập lại dữ liệu");
+            // }
+            // if (!users.email==="@") {
+            //     return console.log("vui lòng nhập lại dữ liệu");
+            // }
+            // if (users.password.length<8) {
+            //     return console.log("vui lòng nhập lại dữ liệu");
+            // }
+            return users_sv.push(object)
+            console.log(users_sv);
+            
+        }
+        
+        console.log(validate(object));
+        
+    </script>
+</body>
+</html>

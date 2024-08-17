@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson13</title>
+</head>
+<body>
+    <h3>Bài tập: Xóa thuộc tính và thêm thuộc tính</h3>
+    <script>
+        /* Viết chương trình khai báo đối tượng information có các thuộc tính id, name, phone, address. 
+        Tiến hành xóa thuộc tính address và thêm thuộc tính email cho đối tượng và in đối tượng ra màn hình. */
+        let information={
+            id:123,
+            name:"Phạm Thị Ngô",
+            phone:"0944444444",
+            address:"Hà Nam"
+        };
+        console.log(information);
+        //xóa thuộc tính address
+        delete information.address;
+        information.email="ngo@gmail.com";
+        console.log(information);
+        
+        
+    </script>
+</body>
+</html>

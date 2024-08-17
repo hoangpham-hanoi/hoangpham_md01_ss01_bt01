@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson13</title>
+</head>
+<body>
+    <h3>Bài tập: Sắp xếp sản phẩm theo giá</h3>
+    <script>
+        /* Cho một mảng products chứa các đối tượng product gồm các thông tin sau: id, product_name, price. 
+        Xây dựng hàm để sắp xếp danh sách products tăng dần và in ra mảng đã được sắp xếp ra ngoài màn hình */
+        let apple=[
+            {
+                id:1,
+                name:"iphone 12",
+                price:20000
+            },
+            {
+                id:2,
+                name:"iphone 11",
+                price:10000
+            },
+            {
+                id:3,
+                name:"iphone 13",
+                price:30000
+            },
+        ];
+        console.log(apple);
+
+        apple.sort(function(a,b) {
+            return a.price-b.price;
+        });
+        
+        console.log("sắp xếp sản phẩm theo giá tăng dần:",apple);
+        
+
+    </script>
+</body>
+</html>

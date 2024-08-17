@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson14</title>    
+</head>
+<body>
+    <h3>Bài tập: Làm quen với DOM</h3>
+    <!-- <p>
+        Không viết thêm gì vào thẻ ngoại trừ nhúng javascript trong file html, viết chương trình hiển thị 
+        danh sách lên trang web như sau
+    </p> -->   
+
+    <ul id="myList"></ul>
+
+    <script>
+        // Danh sách các mục
+        const items = ['List item number 1', 'List item number 2', 'List item number 3', 'List item number 4'];
+
+        // Lấy phần tử ul từ DOM
+        const list = document.getElementById('myList');
+
+        // Duyệt qua danh sách và tạo các phần tử li cho mỗi mục
+        items.forEach(item => {
+            const li=document.createElement("li");
+            li.textContent=item;
+            list.appendChild(li);
+        });
+      
+    </script>
+    </script>
+</body>
+</html>

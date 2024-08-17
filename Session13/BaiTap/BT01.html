@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson13</title>
+</head>
+<body>
+    <h3>
+        Bài tập: Làm quen với đối tượng
+    </h3>
+    <script>
+        /* Viết chương trình khai báo đối tượng information có các thuộc tính id, name, phone, address. 
+        Yêu cầu người dùng nhập vào thông tin cá nhân, lưu thông tin nhận được vào đối tượng và in ra màn hình. */
+       
+        //C1:Sử dụng object literals
+        let information1={
+            id:123,
+            name:"Hà Văn Mít",
+            phone:"0912345678",
+            address:"Hà Nội"
+        };
+        console.log(information1);        
+      
+        //C2: object constructor functions
+        function information2(id,name,phone,address){
+            this.id=id,
+            this.name=name,
+            this.phone=phone,
+            this.address=address
+        };
+        let info2=new information2(456,"Nguyễn Đình Tùng","0911111111","Hải Phòng")
+        console.log(info2);
+     
+        //C3: dùng new Object
+        let info3=new Object();
+        info3.id=456;
+        info3.name="Đỗ Thị Lúa";
+        info3.phone="0922222222";
+        info3.address="Hải Dương";      
+        console.log(info3);
+        
+        //C4: dùng class
+        class information4 {
+            constructor(id,name,phone,address){
+                this.id=id,
+                this.name=name,
+                this.phone=phone,
+                this.address=address
+            }
+        };
+
+        let infor4=new information4 (789,"Cao Đình Bảng","0933333333","Cao Bằng");
+        console.log(infor4);
+        
+
+    </script>
+</body>
+</html>
